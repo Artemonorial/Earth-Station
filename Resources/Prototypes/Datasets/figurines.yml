@@ -304,3 +304,9 @@
   values:
     prefix: plushie-bucket-
     count: 10
+
+- type: localizedDataset
+  id: GabrielPlushiePhrases
+  values:
+    prefix: plushie-gabriel-
+    count: 6

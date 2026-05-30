@@ -2309,3 +2309,43 @@
     Telecrystal: 1
   categories:
   - UplinkPointless
+
+- type: listing
+  id: UplinkPatriotBundle
+  name: Набор Патриота
+  description: Запечатанный контрактный вещмешок Синдиката. Внутри содержится полный комплект супергероя-социопата для тотального доминирования на станции.
+  icon: { sprite: Clothing/Uniforms/Vilian/villain_uniform.rsi, state: icon } # Иконка костюма Патриота в меню Аплинка
+  productEntity: SyndicateBundleVillain
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: uplinkBloodyGift
+  name: Кровавый сюрприз
+  description: Интересно, а внутри игрушка вся в крови?
+  productEntity: CustomGiftBloody
+  cost:
+    Telecrystal: 2
+  discountCategory: veryRareDiscounts # Группа редких скидок (как у брони аколита)
+  discountDownTo:
+    Telecrystal: 1
+  categories:
+  - UplinkPointless
+
+- type: listing
+  id: uplinkBloodyExosuit
+  name: Набор ударник
+  description: Металические удары помогут с корпоратами или с ударами по ним.
+  productEntity: ClothingBackSyndicateExosuit
+  cost:
+    Telecrystal: 6
+  discountCategory: veryRareDiscounts # Группа редких скидок (как у брони аколита)
+  discountDownTo:
+    Telecrystal: 4
+  categories:
+  - UplinkWeaponry

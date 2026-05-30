@@ -1,0 +1,80 @@
+﻿# ==========================================
+#         КОМПЛЕКТ ОДЕЖДЫ ПАТРИОТА
+# ==========================================
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformVillain
+  name: костюм Патриота
+  description: Яркий, величественный комбинезон с массивными наплечниками. В нем вы будете выглядеть как настоящий спаситель станции... или её величайший кошмар. Я могу делать всё, что захочу!
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Vilian/villain_uniform.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Uniforms/Vilian/villain_uniform.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingGlovesVillain
+  name: перчатки Патриота
+  description: Плотные перчатки, созданные для крепких рукопожатий на камеру и... не менее крепких захватов за горло в темных коридорах техтонов. Обладают невероятной плотностью, превращая ваши кулаки в стальные молоты.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Vilian/villain_gloves.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Uniforms/Vilian/villain_gloves.rsi
+    slots:
+    - GLOVES
+    clothingVisuals:
+      gloves:
+      - state: equipped-INNERCLOTHING
+  - type: MeleeWeapon
+    angle: 30
+    animation: WeaponArcPunch
+    soundHit:
+      path: /Audio/Weapons/boxingpunch1.ogg
+    damage:
+      types:
+        Blunt: 10
+
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingShoesVillain
+  name: ботинки Патриота
+  description: Идеально начищенные ботинки высшего качества. Они созданы для того, чтобы уверенно стоять на вершине пищевой цепочки, презрительно глядя на жалких ассистентов внизу.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Vilian/villain_shoes.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Uniforms/Vilian/villain_shoes.rsi
+    slots:
+    - FEET
+    clothingVisuals:
+      shoes:
+      - state: equipped-INNERCLOTHING
+
+# ==========================================
+#    ЗАПОЛНЕННЫЙ ДАФЛБЕГ (ОТДЕЛ СИНДИКАТА)
+# ==========================================
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicate   # Наследует идеальную сетку и спрайт сумки из ядра
+  id: SyndicateBundleVillain
+  name: вещмешок «Набор Патриота»
+  description: Плотный контрактный дафлбег Синдиката. Внутри аккуратно укомплектовано всё необходимое для тотального доминирования.
+  components:
+  - type: StorageFill                       # Используем стандартный, стабильный наполнитель
+    contents:
+      - id: ClothingUniformVillain
+        amount: 1
+      - id: ClothingGlovesVillain
+        amount: 1
+      - id: ClothingShoesVillain
+        amount: 1
+      - id: Stimpack
+        amount: 4
+      - id: BedsheetUSA
+        amount: 1

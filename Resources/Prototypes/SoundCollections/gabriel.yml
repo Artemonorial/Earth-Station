@@ -1,0 +1,9 @@
+- type: soundCollection
+  id: GabrielVoiceLines
+  files:
+  - /Audio/Voice/Gabriel/Phrase1.ogg
+  - /Audio/Voice/Gabriel/Phrase2.ogg
+  - /Audio/Voice/Gabriel/Phrase3.ogg
+  - /Audio/Voice/Gabriel/Phrase4.ogg
+  - /Audio/Voice/Gabriel/Phrase5.ogg
+  - /Audio/Voice/Gabriel/Phrase6.ogg

@@ -524,6 +524,7 @@
     - Carpets
     - Bedsheets
     - CorvaxClothing # Corvax-Clothing
+    - CustomPlushiePack
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm

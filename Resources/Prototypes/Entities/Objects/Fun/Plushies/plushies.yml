@@ -1481,3 +1481,105 @@
   - type: TriggerOnCollide
     fixtureID: fix1
     keyOut: timer
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieGabriel
+  name: Плюшевый архангел
+  description: На этикетке у него имеется надпись — не подносить магнит.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Plushies/gabriel.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/Plushies/gabriel.rsi
+    slots: [ HEAD ]
+  - type: Speech
+  - type: TriggerOnActivate
+  - type: TriggerOnUse
+  - type: UseDelay
+    delay: 2.0
+  - type: UseDelayOnTrigger
+  # Выдача текста
+  - type: SpeakOnTrigger
+    pack: GabrielPlushiePhrases
+    probability: 1.0
+  # Выдача звука через коллекцию из папки SoundCollections
+  - type: EmitSoundOnUse
+    sound:
+      collection: GabrielVoiceLines
+  - type: EmitSoundOnActivate
+    sound:
+      collection: GabrielVoiceLines
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDante
+  name: Плюшевый стрелок
+  description: Мягкий, пафосный и абсолютно бесполезный в бою, но если вы не дадите ему пиццу, он закомбит ваш палец до состояния клинической смерти.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Plushies/dante.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound: &PlushieDanteSound
+      path: /Audio/Voice/Plushki/dante-sound.ogg
+  - type: EmitSoundOnActivate
+    sound: *PlushieGarcelloSound
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/Plushies/dante.rsi
+    slots:
+    - HEAD
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: DantePlushie
+
+- type: entity
+  parent: BasePlushie
+  id: vergily
+  name: Плюшевый самурай
+  description: Официально этот унылый синий парень зовется «плюшевым Вергилием» только в ваших влажных мечтах о робасте, а на космической станции его величают просто «плюшевым синим братом»
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Plushies/vergily.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/Plushies/vergily.rsi
+    slots:
+    - HEAD
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.04"
+  - type: FoodSequenceElement
+    entries:
+      CottonBurger: VergilyPlushie
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieMinos
+  name: Плюшевый безликий судья
+  description: Этот безликий плюшевый король с дырой вместо лица не платит налоги, презирает роботов и готов в любой момент прокричать «JUDGEMENT!», сокрушив челюсть неосторожного ассистента сокрушительным дропкиком.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Plushies/minos.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/Plushies/minos.rsi
+    slots: [ HEAD ]
+  - type: TriggerOnActivate
+  - type: TriggerOnUse
+  - type: UseDelay
+    delay: 2.0
+  - type: UseDelayOnTrigger
+  # Выдача звука через коллекцию из папки SoundCollections
+  - type: EmitSoundOnUse
+    sound:
+      collection: MinosVoiceLines
+  - type: EmitSoundOnActivate
+    sound:
+      collection: MinosVoiceLines

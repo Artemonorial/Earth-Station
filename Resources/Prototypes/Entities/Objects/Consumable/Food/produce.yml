@@ -2875,7 +2875,6 @@
       - Dragonfruit
   - type: Tag
     tags:
-    - DragonFruit
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -2906,7 +2905,6 @@
       - yellowDragonfruit
   - type: Tag
     tags:
-    - YellowDragonFruit
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -2927,7 +2925,7 @@
     heldPrefix: produce
   - type: Produce
     seedId: yellowdragonFruits
-    
+
 - type: entity
   name: Мангустин
   parent: FoodProduceBase
@@ -2939,7 +2937,6 @@
       - mangosteen
   - type: Tag
     tags:
-    - Mangosteen
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -2970,7 +2967,6 @@
       - pear
   - type: Tag
     tags:
-    - Pear
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -3001,7 +2997,6 @@
       - pricklepear
   - type: Tag
     tags:
-    - PricklePear
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -3032,7 +3027,6 @@
       - teto_pear
   - type: Tag
     tags:
-    - MPear
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -3048,7 +3042,7 @@
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/teto_pear.rsi
     layers:
-    - state: icon # Движку нужно знать, какой слой рисовать из RSI
+    - state: icon
   - type: Item
     heldPrefix: produce
   - type: Produce
@@ -3068,7 +3062,7 @@
     useSound: *PlushieTetoSound
   - type: MeleeWeapon
     soundHit: *PlushieTetoSound
-    damage: # Фикс ошибки Required field damage
+    damage:
       types:
         Blunt: 0
 
@@ -3083,7 +3077,6 @@
       - durian
   - type: Tag
     tags:
-    - Durian
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -3116,7 +3109,6 @@
       - papaya
   - type: Tag
     tags:
-    - Papaya
     - Fruit
   - type: SolutionContainerManager
     solutions:
@@ -3147,7 +3139,6 @@
       - rambutan
   - type: Tag
     tags:
-    - Rambutan
     - Fruit
   - type: SolutionContainerManager
     solutions:

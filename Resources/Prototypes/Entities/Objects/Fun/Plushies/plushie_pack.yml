@@ -1,0 +1,167 @@
+# ==========================================
+#      РЕЦЕПТЫ ДЛЯ ПРИНТЕРА УНИФОРМЫ
+# ==========================================
+
+# --- Первая серия (Красный подарок) ---
+- type: latheRecipe
+  id: RecipePlushieBee
+  result: PlushieBee
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieSpaceCarp
+  result: PlushieCarp             # ИСПРАВЛЕНО: Теперь ссылается на реальный ID вашего сервера
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieSnake
+  result: PlushieSnake
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieSlime
+  result: PlushieSlime
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieRouny
+  result: PlushieRouny
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieVox
+  result: PlushieVox
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieDiona
+  result: PlushieDiona
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieSharkBlue
+  result: PlushieSharkBlue
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieSharkPink
+  result: PlushieSharkPink
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieSharkGrey
+  result: PlushieSharkGrey
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieMoth
+  result: PlushieMoth
+  completetime: 2
+  materials:
+    Cloth: 300
+
+# --- Вторая серия (Синий подарок) ---
+- type: latheRecipe
+  id: RecipePlushieIsaac
+  result: PlushieIsaac
+  completetime: 2
+  materials:
+    Cloth: 300
+    Durathread: 200
+
+- type: latheRecipe
+  id: RecipePlushieBucket
+  result: PlushieBucket
+  completetime: 2
+  materials:
+    Cloth: 300
+    Durathread: 200
+
+- type: latheRecipe
+  id: RecipePlushieV1
+  result: PlushieV1
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieGabriel
+  result: PlushieGabriel
+  completetime: 2
+  materials:
+    Cloth: 300
+    Durathread: 500
+
+# --- Третья серия (Жёлтый подарок) ---
+- type: latheRecipe
+  id: RecipePlushieDante
+  result: PlushieDante
+  completetime: 2
+  materials:
+    Cloth: 300
+    Durathread: 300
+
+- type: latheRecipe
+  id: RecipePlushieVergily
+  result: vergily
+  completetime: 2
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: RecipePlushieMinos
+  result: PlushieMinos
+  completetime: 2
+  materials:
+    Cloth: 300
+    Durathread: 200
+
+
+# ==========================================
+#     ПАКЕТ РЕЦЕПТОВ (КАТЕГОРИЯ В МЕНЮ)
+# ==========================================
+
+- type: latheRecipePack            # ИСПРАВЛЕНО: Правильный тип прототипа
+  id: CustomPlushiePack            # Ваш кастомный ID пакета
+  recipes:
+    # Плюшки из 1 серии
+    - RecipePlushieBee
+    - RecipePlushieSpaceCarp
+    - RecipePlushieSnake
+    - RecipePlushieSlime
+    - RecipePlushieRouny
+    - RecipePlushieVox
+    - RecipePlushieDiona
+    - RecipePlushieSharkBlue
+    - RecipePlushieSharkPink
+    - RecipePlushieSharkGrey
+    - RecipePlushieMoth
+    # Плюшки из 2 серии
+    - RecipePlushieIsaac
+    - RecipePlushieBucket
+    - RecipePlushieV1
+    - RecipePlushieGabriel
+    # Плюшки из 3 серии
+    - RecipePlushieDante
+    - RecipePlushieVergily
+    - RecipePlushieMinos

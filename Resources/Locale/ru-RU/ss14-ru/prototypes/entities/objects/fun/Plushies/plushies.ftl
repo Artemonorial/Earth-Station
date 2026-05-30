@@ -88,3 +88,10 @@ plushie-bucket-7 = *глухие звуки металла*
 plushie-bucket-8 = Ты видел моё ведёрко?
 plushie-bucket-9 = Ведроносец всегда на посту.
 plushie-bucket-10 = Руки прочь!
+
+plushie-gabriel-1 = Machine, turn back, now!
+plushie-gabriel-2 = Limb.Lust.All gone...
+plushie-gabriel-3 = YOU'RE NEED MORE POWER!
+plushie-gabriel-4 = I will show you TRUE splendor!
+plushie-gabriel-5 = I WILL SHOW YOU DIVINE JUSTICE!
+plushie-gabriel-6 = A mirror object!

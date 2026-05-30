@@ -1,0 +1,53 @@
+- type: entity
+  parent: Clothing
+  id: ClothingBackExosuitArms
+  name: механические манипуляторы экзокостюма
+  description: Наспинный модуль, оснащенный парой дополнительных гидравлических клешней.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/exosuit.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    sprite: Clothing/Back/Backpacks/exosuit.rsi
+  - type: ExtraArmsProvider
+
+- type: entity
+  parent: Clothing
+  id: ClothingBackMedExosuit
+  name: медицинский наспинный инжектор
+  description: Наспинный медицинский модуль. Автоматически вводит эпинефрин, если показатели носителя падают до критических.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/med_exosuit.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    sprite: Clothing/Back/Backpacks/med_exosuit.rsi
+  - type: MedExosuitProvider
+  - type: SolutionContainerManager
+    solutions:
+      injector_buffer:
+        maxVol: 60
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 60
+
+- type: entity
+  parent: Clothing
+  id: ClothingBackSyndicateExosuit
+  name: синдикатский экзокостюм «Кроваво-красная бойня»
+  description: Запрещенный наспинный штурмовой модуль Синдиката. Гидравлические усилители увеличивают силу ударов в ближнем бою.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/bloody_red_exosuit.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    sprite: Clothing/Back/Backpacks/bloody_red_exosuit.rsi
+  - type: SyndicateExosuitProvider

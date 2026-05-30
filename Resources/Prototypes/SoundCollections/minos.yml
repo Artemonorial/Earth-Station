@@ -1,0 +1,9 @@
+- type: soundCollection
+  id: MinosVoiceLines
+  files:
+  - /Audio/Voice/Minos/Phrase1.ogg
+  - /Audio/Voice/Minos/Phrase2.ogg
+  - /Audio/Voice/Minos/Phrase3.ogg
+  - /Audio/Voice/Minos/Phrase4.ogg
+  - /Audio/Voice/Minos/Phrase5.ogg
+  - /Audio/Voice/Minos/Phrase6.ogg

@@ -300,3 +300,158 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
+
+# ==========================================
+#           ОБЁРТОЧНАЯ БУМАГА
+# ==========================================
+
+- type: entity
+  parent: BaseItem
+  id: TrashGiftRed
+  name: скомканная красная оберточная бумага
+  description: Ошметки от красного праздничного подарка.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/red_gift.rsi
+    state: unwrapped
+
+- type: entity
+  parent: BaseItem
+  id: TrashGiftBloody
+  name: скомканная окровавленная оберточная бумага
+  description: Ошметки чьей-то запретной радости... Выглядит жутко.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/bloody_red_gift.rsi
+    state: unwrapped
+
+- type: entity
+  parent: BaseItem
+  id: TrashGiftBlue
+  name: скомканная синяя оберточная бумага
+  description: Ошметки от синего праздничного подарка.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/blue_gift.rsi
+    state: unwrapped
+
+- type: entity
+  parent: BaseItem
+  id: TrashGiftYellow
+  name: скомканная жёлтая оберточная бумага
+  description: Ошметки от ограниченной серии праздничных подарков.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/yellow_gift.rsi
+    state: unwrapped
+
+# ==========================================
+#           КОРОБКИ С ПОДАРКАМИ
+# ==========================================
+- type: entity
+  parent: BaseItem
+  id: CustomGiftRed
+  name: красный праздничный подарок
+  description: На этой коробке есть этикетка "Игрушки из первой серии"
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/red_gift.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1.0
+  - type: SpawnItemsOnUse
+    items:
+      - id: TrashGiftRed        # Выпадает всегда при открытии
+      - id: PlushieBee
+        orGroup: RedGiftGroup # Одинаковое имя группы заставляет выбрать только 1 предмет
+      - id: PlushieSpaceCarp
+        orGroup: RedGiftGroup
+      - id: PlushieSnake
+        orGroup: RedGiftGroup
+      - id: PlushieSlime
+        orGroup: RedGiftGroup
+      - id: PlushieRouny
+        orGroup: RedGiftGroup
+      - id: PlushieVox
+        orGroup: RedGiftGroup
+      - id: PlushieDiona
+        orGroup: RedGiftGroup
+      - id: PlushieSharkBlue
+        orGroup: RedGiftGroup
+      - id: PlushieSharkPink
+        orGroup: RedGiftGroup
+      - id: PlushieSharkGrey
+        orGroup: RedGiftGroup
+      - id: PlushieMoth
+        orGroup: RedGiftGroup
+
+- type: entity
+  parent: BaseItem
+  id: CustomGiftBloody
+  name: кроваво-красный праздничный подарок
+  description: На этой коробке есть этикетка "Игрушки из запрещённой серии"
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/bloody_red_gift.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1.0
+  - type: SpawnItemsOnUse
+    items:
+      - id: TrashGiftBloody     # Выпадает всегда при открытии
+      - id: PlushieSpaceLizard
+        orGroup: BloodyGiftGroup
+      - id: PlushieNar
+        orGroup: BloodyGiftGroup
+      - id: PlushieRatvar
+        orGroup: BloodyGiftGroup
+      - id: PlushieNuke
+        orGroup: BloodyGiftGroup
+      - id: PlushieXeno
+        orGroup: BloodyGiftGroup
+      - id: PlushieV2
+        orGroup: BloodyGiftGroup
+
+- type: entity
+  parent: BaseItem
+  id: CustomGiftBlue
+  name: синий праздничный подарок
+  description: На этой коробке есть этикетка "Игрушки из второй серии"
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/blue_gift.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1.0
+  - type: SpawnItemsOnUse
+    items:
+      - id: TrashGiftBlue       # Выпадает всегда при открытии
+      - id: PlushieIsaac
+        orGroup: BlueGiftGroup
+      - id: PlushieBucket
+        orGroup: BlueGiftGroup
+      - id: PlushieV1
+        orGroup: BlueGiftGroup
+      - id: PlushieGabriel
+        orGroup: BlueGiftGroup
+
+- type: entity
+  parent: BaseItem
+  id: CustomGiftYellow
+  name: жёлтый праздничный подарок
+  description: На этой коробке есть этикетка "Игрушки из третьей серии"
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Gift/yellow_gift.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1.0
+  - type: SpawnItemsOnUse
+    items:
+      - id: TrashGiftYellow     # Выпадает всегда при открытии
+      - id: PlushieDante
+        orGroup: YellowGiftGroup
+      - id: vergily
+        orGroup: YellowGiftGroup
+      - id: PlushieMinos
+        orGroup: YellowGiftGroup
